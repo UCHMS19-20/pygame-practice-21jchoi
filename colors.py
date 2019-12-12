@@ -4,6 +4,11 @@ import pygame
 # Initialize pygame so it runs in the background and manages things
 pygame.init()
 
+#make colors
+red = pygame.Color(255, 0, 0)
+teal = pygame.Color(0, 204, 204)
+bday = pygame.Color(90, 30, 30)
+
 # Create a display. Size must be a tuple, which is why it's in parentheses
 screen = pygame.display.set_mode( (400, 300) )
 
@@ -16,3 +21,6 @@ while True:
         if event.type == pygame.QUIT:
             # If so, exit the program
             sys.exit()
+    screen.fill(bday)
+    #fill screen with color
+    pygame.display.flip()
